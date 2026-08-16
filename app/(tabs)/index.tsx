@@ -8,8 +8,8 @@ export default function HomeScreen() {
     <SafeAreaView className="flex-1 bg-background" edges={["top", "bottom"]}>
       <View className="flex-1 px-5 py-4">
         {/* Header */}
-        <Text className="text-xl font-sans-bold text-success mb-6">
-          Welcome to Nativewind!
+        <Text className="text-7xl font-sans-extrabold">
+          Home
         </Text>
 
         {/* Navigation Links */}
