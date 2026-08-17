@@ -2,7 +2,7 @@ import { Link } from 'expo-router'
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const onBoarding = () => {
+const OnBoarding = () => {
     return (
         <View>
             <Text>onBoarding</Text>
@@ -11,4 +11,4 @@ const onBoarding = () => {
     )
 }
 
-export default onBoarding
+export default OnBoarding

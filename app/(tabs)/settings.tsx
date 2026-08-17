@@ -1,14 +1,26 @@
-import { styled } from "nativewind";
-import { Text } from 'react-native';
-import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
-const SafeAreaView = styled(RNSafeAreaView);
+import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Settings = () => {
     return (
-        <SafeAreaView className="flex-1 bg-background p-5">
+        <SafeAreaView style={styles.container}>
+            <View style={styles.redBox} />
             <Text>Settings</Text>
         </SafeAreaView>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#f5f5f5',
+        padding: 20,
+    },
+    redBox: {
+        width: 80,
+        height: 80,
+        backgroundColor: 'red',
+    },
+});
 
 export default Settings
